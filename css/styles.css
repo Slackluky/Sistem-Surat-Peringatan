@@ -1,0 +1,26 @@
+.container{
+    color : white;
+}
+
+@media print{
+    p{
+        font-size: 16pt;
+    }
+    .container{
+        color: black;
+        
+    }
+    .spmail-card{
+        max-height: 90vh;
+    }
+    .spmail-button{
+        display: none;
+    }
+    .author{
+      margin-top: 100px;
+      font-size: 30pt;
+    }
+    .author p{
+        margin-top: 80px;
+      }
+}

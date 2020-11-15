@@ -1,0 +1,20 @@
+$.ajax({url: "get_data.php", success: function(result){
+	var eko =(jQuery.parseJSON(result));
+	var select = $('#select');
+	$.each(eko, function(i, value){
+		$('<option>').text(value.firstname +(" ")+ value.lastname)
+		.val(value.firstname)
+		.appendTo(select);
+		
+	});
+	$(document).on('change','#select',function(){
+		console.log(select.val());
+});
+	$("#select").on("option", function(){
+		if($(this.val()== "eko" )){
+			console.log("oke");
+		}else{
+			console.log("koe");
+		}
+	})
+    }});
